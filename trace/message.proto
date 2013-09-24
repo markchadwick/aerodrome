@@ -1,0 +1,9 @@
+package trace;
+
+message Trace {
+  required  int64   start     = 2;
+  required  int64   end       = 3;
+  repeated  string  message   = 4;
+
+  repeated  Trace   child     = 5;
+}

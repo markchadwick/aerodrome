@@ -2,9 +2,7 @@ package net
 
 import (
 	"github.com/markchadwick/spec"
-	"testing"
 )
 
-func Test(t *testing.T) {
-	spec.Run(t)
-}
+var _ = spec.Suite("Session", func(c *spec.C) {
+})

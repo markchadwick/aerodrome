@@ -1,0 +1,6 @@
+package net;
+
+message Ping {
+  required  bool    pong  = 1;
+  required  uint32  id    = 2;
+}

@@ -31,7 +31,7 @@ func (t *Trace) Add(child *Trace) {
 	copy(children[0:idx], t.Child[0:idx])
 	copy(children[idx+1:], t.Child[idx:])
 	children[idx] = child
-  t.Child = children
+	t.Child = children
 }
 
 // Find the index in the `child` array for the given start time. This will not
